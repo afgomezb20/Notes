@@ -26,8 +26,7 @@ public class User implements Serializable {
 
     @Email
     private String email;
-
-    private String ciudad;
+    
 
     public Long getId() {
         return id;
@@ -69,11 +68,4 @@ public class User implements Serializable {
         this.cedula = cedula;
     }
 
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
-    }
 }
