@@ -1,7 +1,5 @@
 package com.example.notasfaciles.model;
 
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -26,7 +24,9 @@ public class User implements Serializable {
 
     @Email
     private String email;
-    
+
+    //@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
+    //private Note note;
 
     public Long getId() {
         return id;
@@ -68,4 +68,11 @@ public class User implements Serializable {
         this.cedula = cedula;
     }
 
+   /* public Note getNote() {
+        return note;
+    }
+
+    public void setNote(Note note) {
+        this.note = note;
+    }*/
 }
