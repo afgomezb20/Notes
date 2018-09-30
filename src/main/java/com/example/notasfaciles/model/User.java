@@ -25,9 +25,6 @@ public class User implements Serializable {
     @Email
     private String email;
 
-    //@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
-    //private Note note;
-
     public Long getId() {
         return id;
     }
@@ -68,11 +65,4 @@ public class User implements Serializable {
         this.cedula = cedula;
     }
 
-   /* public Note getNote() {
-        return note;
-    }
-
-    public void setNote(Note note) {
-        this.note = note;
-    }*/
 }

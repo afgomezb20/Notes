@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>notas faciles</artifactId>
+	<artifactId>notas_faciles</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>notas faciles</name>
+	<name>notas_faciles</name>
 	<description>Rest API para una aplicación de toma de notas simple</description>
 
 	<parent>
