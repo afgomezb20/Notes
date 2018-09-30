@@ -43,6 +43,7 @@ public class UserController {
         user.setLast_name(userDetails.getLast_name());
         user.setEmail(userDetails.getEmail());
         user.setCedula(userDetails.getCedula());
+        user.setAge(userDetails.getAge());
         return userRepository.save(user);
     }
 

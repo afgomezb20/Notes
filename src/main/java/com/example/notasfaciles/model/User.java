@@ -3,6 +3,7 @@ package com.example.notasfaciles.model;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
@@ -24,6 +25,9 @@ public class User implements Serializable {
 
     @Email
     private String email;
+
+    @NotNull
+    private int age;
 
     public Long getId() {
         return id;
@@ -65,4 +69,11 @@ public class User implements Serializable {
         this.cedula = cedula;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
